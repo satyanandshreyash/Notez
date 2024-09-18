@@ -6,10 +6,10 @@ A Note Making Web Application
 
 - [Description](#description)
 - [Features](#features)
-- [Technologies Used](#technologiesused)
+- [Technologies Used](#technologies-used)
 - [Installation](#installation)
-- [Backend Setup](#backendsetup)
-- [Frontend Setup](#frontendsetup)
+- [Backend Setup](#backend-setup)
+- [Frontend Setup](#frontend-setup)
 - [Usage](#usage)
 - [Contributing](#contributing)
 
