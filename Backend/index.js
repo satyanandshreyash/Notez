@@ -16,9 +16,25 @@ const {authenticateToken} = require("./utilities");
 
 app.use(express.json());
 
+const allowedOrigins = [
+    process.env.FRONTEND_URL, // Add your frontend URL here
+    // Add other allowed origins here if needed
+];
+
 app.use(cors({
-    origin: "*",
+    origin: (origin, callback) => {
+        if (allowedOrigins.includes(origin) || !origin) { // !origin is for server-to-server requests
+            callback(null, true);
+        } else {
+            callback(new Error('Not allowed by CORS'));
+        }
+    },
+    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+    credentials: true
 }));
+
+app.options('*', cors());
+
 
 app.get("/", (req, res) => {
     res.json({data: "hello"});
