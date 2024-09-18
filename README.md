@@ -2,6 +2,17 @@
 
 A Note Making Web Application
 
+## Table of Contents
+
+- [Description](#description)
+- [Features](#features)
+- [Technologies Used](#technologiesused)
+- [Installation](#installation)
+- [Backend Setup](#backendsetup)
+- [Frontend Setup](#frontendsetup)
+- [Usage](#usage)
+- [Contributing](#contributing)
+
 ## Description
 
 This is a basic note-making web application built with the MERN stack (MongoDB, Express, React, Node.js). The application includes authentication using JWT tokens and supports the following functionalities:
@@ -85,8 +96,9 @@ npm install
 3. **Create a .env file in the Frontend directory and add your environment varialbles. Example:**
 
 ```makefile
-VITE_BACKEND_URL=http://localhost:8000 //PORT(8000) should be same as mentioned in .env file present in Backed directory
+VITE_BACKEND_URL=http://localhost:8000
 ```
+**Note:** PORT(8000) should be same as mentioned in .env file present in Backed directory
 
 4. **Start the React App:**
 ```bash
