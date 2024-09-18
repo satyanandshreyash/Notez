@@ -252,6 +252,6 @@ app.get("/search-notes", authenticateToken, async (req, res)=>{
 })
 
 
-app.listen(8000);
+app.listen(process.env.PORT);
 
 module.exports = app;

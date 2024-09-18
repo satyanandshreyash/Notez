@@ -24,7 +24,6 @@ const AddEditNotes = ({
         content,
         tags,
       });
-      console.log(response);
       if (response.data && response.data.note) {
         showToastMessage("Note added successfully.");
         getAllNotes();
